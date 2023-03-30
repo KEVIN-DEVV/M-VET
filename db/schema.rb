@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_093824) do
     t.string "time"
     t.integer "date"
     t.string "service"
-    t.index ["user_id"], name: "index_appointments_on_user_id"
+    t.index ["user_id"], name: "index_appointments_on_user_id"   
   end
 
   add_foreign_key "pets", "users"
