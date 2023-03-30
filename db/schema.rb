@@ -35,3 +35,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_093824) do
 
   add_foreign_key "pets", "users"
 end
+

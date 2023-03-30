@@ -14,3 +14,6 @@ Pet.create(name: "Fluffy", age: 23, species: "cat", breed: "Aus" )
 Pet.create(name: "Fido", age: 12, species: "dog", breed: "Kenyan")
 Pet.create(name: "Buddy", age: 32, species: "dog", breed: "Italian")
 Pet.create(name: "Whiskers", age: 21, species: "cat", breed: "German")
+
+# Seeds for appiontments 
+
