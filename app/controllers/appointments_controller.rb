@@ -13,4 +13,7 @@ class AppointmentsController < ApplicationController
           render "new"
         end
       end
+      def edit
+        @appointment = current_user.appointments.find(params[:id])
+      end
 end
