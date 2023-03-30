@@ -1,0 +1,16 @@
+current directory: /home/moringa/M-VET/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230330-104806-97v3mn.rb extconf.rb
+creating Makefile
+
+current directory: /home/moringa/M-VET/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/moringa/M-VET/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/moringa/M-VET/vendor/bundle/ruby/2.7.0/gems/debug-1.7.2/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230330-104806-1uywlhz/debug
