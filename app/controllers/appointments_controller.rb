@@ -29,4 +29,7 @@ class AppointmentsController < ApplicationController
         @appointment.destroy
         redirect_to appointments_path, notice: "Appointment was successfully deleted."
       end
+      def appointment_params
+        params.require(:appointment).permit(:date, :time, :service_type)
+      end
 end
