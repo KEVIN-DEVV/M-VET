@@ -6,13 +6,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.7.0
 
-* System dependencies
+* System dependencies as indicated in the gem file-run bundle install after cloning your repo to local machine
 
 * Configuration
 
-* Database creation
+* Database creation(using sqlite3)
 
 * Database initialization
 
@@ -26,3 +26,4 @@ Things you may want to cover:
 =======
 # M-VET
 >>>>>>> ca9f48ce89fd9723c00f008f7eee7d72f1723831
+

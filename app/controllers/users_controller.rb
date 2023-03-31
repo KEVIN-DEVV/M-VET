@@ -1,24 +1,21 @@
 class UsersController < ApplicationController
-    def create
-      user = User.create(user_params)
-      if user.valid? 
-        session[:user_id] = user.id
-        render json: user
-      end
-
+  def create
+    user = User.create(user_params)
+    if user.valid? 
+      render json: user
     end
-  
-    def login
-      @user = User.find_by(email: params[:email])
-  
-      if @user&.authenticate(params[:password])
-        sign_in(@user)
-        redirect_to root_url, notice: "Logged in!"
-      else
-        flash.now.alert = "Email or password is invalid"
-        render :new
-      end
+  end
+  def show
+    user = User.find-by(id:session[:user_id])
+    if user
+      render json: user
+    else
+      render json: {error: "Not Authorized"}, status: :unauthorized
     end
+  end
+  def index
+    render json: User.all
+  end
   
     private
   
